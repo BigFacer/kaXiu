@@ -11,6 +11,7 @@ Page({
     latitude: '',
     longitude: '',
     address:'',
+    url:'',
     takeSession: false,
     requestResult: ''
   },
@@ -159,6 +160,26 @@ Page({
         console.error(e)
       }
     })
+  },
+  goNewTab: function(e){
+    console.log(e) 
+    let url =e.currentTarget.dataset.type
+    console.log(url)
+    switch(url){
+      case('person'):
+      url = '../personal/personal.wxml'
+        
+      case('suggest'):
+      url = '../suggest/suggest.wxml'
+        
+      case('order'):
+      url = '../order/order.wxml'    
+        
+    }
+     console.log(url) 
+     wx.navigateTo({
+       url: '../personal/personal.wxml',
+     })
   },
   getLocationName: function(e) {
     var that = this
