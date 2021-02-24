@@ -1,0 +1,16 @@
+.order_container{
+  width: 100%;
+  height: 100%;
+}
+.order_home{
+  width: 100%;
+  height: 100%;
+}
+.order_hander{
+  width: 100%;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

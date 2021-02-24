@@ -1,0 +1,8 @@
+<view class="suggets_container">
+  <view class="suggest_home">
+    <view class="hand_name">宝贵建议</view>
+     <view class="info_text">谢谢您的建议，我们会做的更好！</view>
+     <textarea name="suggest_text" id="suggetst_area" cols="30" rows="10" value="请输入建议。。。" adjust-position="true" class="suggest_text"></textarea>
+     <button class="entry_btn" size="mini">提交</button> 
+    </view>
+</view>

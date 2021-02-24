@@ -1,7 +1,30 @@
 <view class="person_container">
-   <view class="hand_name">个人预约</view>
-   <view class="hand_name">个人预约</view>
-   <view class="hand_name">个人预约</view>
-   <view class="hand_name">个人预约</view>
-   
+   <view class="person_home">
+      <view class="hand_name">个人预约</view>
+      <view class="tab_name">已预约项目</view>
+      <view class="table">
+         <view class="tr bg-w">
+            <view class="th">时间</view>
+            <view class="th">项目</view>
+            <view class="th">预约金额</view>
+            <view class="th">修改</view>
+         </view>
+         <block wx:for="{{listData}}" wx:key="{{code}}">
+            <view class="tr"> 
+               <view class="td">{{item.time}}</view>
+               <view class="td">{{item.sub}}</view>
+               <view class="td">{{item.numb}}</view>
+               <view class="td">修改</view>
+            </view>
+            <!-- <view class="tr"> 
+               <view class="td">2021-06-10</view>
+               <view class="td">烫发</view>
+               <view class="td">15</view>
+               <view class="td">修改</view>
+            </view> -->
+         </block>
+      </view>
+   </view>
+
+
 </view>
