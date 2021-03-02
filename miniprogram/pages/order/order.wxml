@@ -1,5 +1,11 @@
 <view class="order_container">
   <view class="order_home">
      <view class="order_hander">预约页面</view>
+      <view class="selection">
+        <view>选择时间</view>
+        <picker mode="date" value='' start='{{startDate}}' end='{{endDate}}' bindchange='bindDateChange'>
+           <view class="picker">{{date}}</view>
+        </picker>
+      </view> 
   </view>
 </view>
