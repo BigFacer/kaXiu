@@ -1,4 +1,5 @@
-let userFun = require('../component/components')
+// let userFun = require('userFun')
+const  userFun = require('../component/components')
 Page({
   data: {
     startDate:'',
@@ -10,6 +11,9 @@ Page({
   onLoad: function(){
   //  let a = userFun.sevenDate();
    console.log(userFun)
+   let a = new userFun;
+   let b = a.sevenDate();
+  console.log(b)
    
      this.setData({
        date:  this.data.newDate,
