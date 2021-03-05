@@ -6,6 +6,13 @@
         <picker mode="date" value='' start='{{startDate}}' end='{{endDate}}' bindchange='bindDateChange'>
            <view class="picker">{{date}}</view>
         </picker>
+        <select name="timeY" id="timey" wx:for="{{timeList}}">
+          <option value="">{{item}}</option>
+        </select>
+        <block wx:for="{{timeList}}" wx:item='item'>
+          <view>{{item}}</view>
+        </block>
+        
       </view> 
   </view>
 </view>
