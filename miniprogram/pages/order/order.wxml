@@ -13,6 +13,7 @@
           <view>{{item}}</view>
         </block>
         
+         <Select prop-array='{{selectArray}}'></Select>
       </view> 
   </view>
 </view>

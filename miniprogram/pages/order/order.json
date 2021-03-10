@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "预约页面",
-  "usingComponents": {}
+  "usingComponents": {
+    "Select" : "../component/select/select"
+  }
 }

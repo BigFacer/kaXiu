@@ -7,14 +7,24 @@ Page({
     index: 0,
     date: '',
     timeList:[],
+    selectArray: [{
+      "id": "10",
+      "text": "会计类"
+  }, {
+      "id": "21",
+      "text": "工程类"
+  }],
     newDate: new Date().getFullYear()+ '-'+(new Date().getMonth()+1)+'-'+new Date().getDate()
   },
   onLoad: function(){
   //  let a = userFun.sevenDate();
    console.log(userFun)
    let aFun = new userFun;
-  //  let timeList = aFun.sevenDate();
-  console.log(aFun.sevenDate())
+   let timeList = aFun.sevenDate();
+  // console.log(aFun.sevenDate())
+  for(let i in timeList){
+    console.log(timeList[i])
+  }
    
      this.setData({
        timeList: aFun.sevenDate(),

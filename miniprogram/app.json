@@ -24,6 +24,36 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "预约",
+        "iconPath": "images/biaoqian.png",
+        "selectedIconPath": "images/biaoqian.png"
+      },
+      {
+        "pagePath": "pages/suggest/suggest",
+        "text": "建议",
+        "iconPath": "images/dingdan.png",
+        "selectedIconPath": "images/dingdan.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode.png"
+        
+      }
+    ]
+  },
   "permission": {
     "scope.userLocation": {
       "desc": "获取位置信息"

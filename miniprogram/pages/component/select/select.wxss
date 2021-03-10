@@ -1,60 +1,51 @@
-.select-box {
-  position: relative;
-  width: 100%;
-  font-size: 30rpx;
+.com-selectBox{
+  width: 200px;
 }
-
-.select-current {
+.com-sContent{
+  border: 1px solid #e2e2e2;
+  background: white;
+  font-size: 16px;
   position: relative;
-  width: 100%;
-  padding: 0 10rpx;
-  line-height: 70rpx;
-  border: 1rpx solid #ddd;
-  border-radius: 6rpx;
-  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
 }
-
-.select-current::after {
+.com-sImg{
   position: absolute;
-  display: block;
-  right: 16rpx;
-  top: 30rpx;
-  content: '';
-  width: 0;
-  height: 0;
-  border: 10rpx solid transparent;
-  border-top: 10rpx solid #999;
+  right: 10px;
+  top: 11px;
+  width: 16px;
+  height: 9px;
+  transition: all .3s ease;
 }
-
-.current-name {
-  display: block;
-  width: 85%;
-  height: 100%;
-  word-wrap: normal;
+.com-sTxt{
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding:0 20px 0 6px;
+  font-size: 14px;
 }
-
-.option-list {
+.com-sList{
+  background: white;
+  width: inherit;
   position: absolute;
-  left: 0;
-  top: 76rpx;
-  width: 100%;
-  padding: 12rpx 20rpx 10rpx 20rpx;
-  border-radius: 6rpx;
+  border: 1px solid #e2e2e2;
+  border-top: none;
   box-sizing: border-box;
-  z-index: 99;
-  box-shadow: 0rpx 0rpx 1rpx 1rpx rgba(0, 0, 0, 0.2) inset;
-  background-color: #fff;
+  z-index: 3;
+  max-height: 120px;
+  overflow: auto;
 }
-
-.option {
-  display: block;
-  width: 100%;
-  line-height: 70rpx;
-  border-bottom: 1rpx solid #eee;
+.com-sItem{
+  height: 30px;
+  line-height: 30px;
+  border-top: 1px solid #e2e2e2;
+  padding: 0 6px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
 }
-
-.option:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
+.com-sItem:first-child{
+  border-top: none;
 }

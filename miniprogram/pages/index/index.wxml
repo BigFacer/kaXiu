@@ -78,10 +78,6 @@
       <view>地址：栾川乡富源商务酒店巷内100米良玉梧桐雨楼下。</view>
       <view>电话：15517939324</view>
     </view>
-    <navigator  url='../personal/personal'> 个人预约</navigator>
-    <navigator  url='../suggest/suggest'> 建议</navigator>
-    <navigator  url='../order/order'> 预约界面</navigator>
-  
   </view>
   
  
