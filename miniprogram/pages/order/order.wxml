@@ -2,18 +2,15 @@
   <view class="order_home">
      <view class="order_hander">预约页面</view>
       <view class="selection">
-        <view>选择时间</view>
-        <picker mode="date" value='' start='{{startDate}}' end='{{endDate}}' bindchange='bindDateChange'>
-           <view class="picker">{{date}}</view>
-        </picker>
-        <select name="timeY" id="timey" wx:for="{{timeList}}">
-          <option value="">{{item}}</option>
-        </select>
-        <block wx:for="{{timeList}}" wx:item='item'>
-          <view>{{item}}</view>
-        </block>
-        
-         <Select prop-array='{{selectArray}}'></Select>
+        <view class="select_text">选择时间</view>
+             <Select prop-array='{{showTimeList}}' bind:time="getTime"></Select>
+             <Select prop-array='{{selectDayArray}}' bind:time="getDay"></Select>
+             <Select prop-array='{{selectDayArray}}' bind:time="getSubject"></Select>
       </view> 
+      <view> 
+         <view>预约金额：   <text>{{monNub}} 元</text></view>
+       
+          <button>确定支付</button>
+      </view>
   </view>
 </view>

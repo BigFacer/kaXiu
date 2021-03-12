@@ -35,15 +35,15 @@ Component({
     setText: function(e) {
       let nowData = this.properties.propArray;
       let nowIdx = e.target.dataset.index;//当前点击的索引
-      let nowText = nowData[nowIdx].text;//当前点击的内容;
+      let nowText = nowData[nowIdx].value;//当前点击的内容;
       let nowId = nowData[nowIdx].id
-      console.log(nowId)
       this.animation.rotate(0).step();
       this.setData({
         selectShow: false,
         nowText: nowText,
         animationData: this.animation.export()
       })
+      this.triggerEvent("time",nowId)
 
     }
   }
