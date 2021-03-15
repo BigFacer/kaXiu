@@ -17,6 +17,14 @@ Page({
   },
 
   onLoad: function() {
+    wx.cloud.callFunction({
+      name: 'getWDay',
+      data: {}
+    }).then( (res) => {
+      console.log(res.result)
+    }).catch((err) => {
+      console.log(err)
+    })
     
     if (!wx.cloud) {
       wx.redirectTo({
